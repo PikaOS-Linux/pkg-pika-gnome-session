@@ -1,4 +1,4 @@
-Source: pika-session
+Source: pika-gnome-session
 Section: x11
 Priority: optional
 Maintainer: Ward Nakchbandi <hotrod.master@hotmail.com>
@@ -6,7 +6,7 @@ Build-Depends: debhelper (>= 10)
 Standards-Version: 3.9.8
 Homepage: https://github.com/PikaOS-Linux/
 
-Package: pika-session
+Package: pika-gnome-session
 Architecture: all
 Depends: gnome-session-bin,
          gnome-session-common,
@@ -16,8 +16,8 @@ Depends: gnome-session-bin,
          xwayland,
          ${misc:Depends}
 Recommends: python3, session-migration, mutter-vrr, gnome-shell-vrr
-Conflicts: ubuntu-session
-Replaces: gnome-session (<= 3.29.90-1ubuntu1), ubuntu-session
+Conflicts: ubuntu-session, pika-session
+Replaces: gnome-session (<= 3.29.90-1ubuntu1), ubuntu-session, pika-session
 Provides: x-session-manager, ubuntu-session
 Description: GNOME session for PikaOS
  This package contains the GNOME session used by PikaOS.

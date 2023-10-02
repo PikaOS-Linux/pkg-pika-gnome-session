@@ -14,6 +14,7 @@ Depends: gnome-session-bin,
          gnome-shell,
          xdg-desktop-portal-gnome | xdg-desktop-portal-backend,
          xwayland,
+         drm-info,
          ${misc:Depends}
 Recommends: python3, session-migration, mutter-vrr, gnome-shell-vrr
 Conflicts: ubuntu-session, pika-session

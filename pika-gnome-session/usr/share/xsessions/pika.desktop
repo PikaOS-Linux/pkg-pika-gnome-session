@@ -2,7 +2,7 @@
 Name=Pika Gnome on Xorg
 Comment=This session logs you into Pika
 Exec=env GNOME_SHELL_SESSION_MODE=pika /usr/bin/gnome-session --session=pika
-TryExec=/usr/bin/gnome-shell
+TryExec=/usr/bin/pika-gnome-shell
 Type=Application
 DesktopNames=pika:GNOME
 X-GDM-SessionRegisters=true

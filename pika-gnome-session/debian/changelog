@@ -1,3 +1,9 @@
+pika-gnome-session (1.1-99pika1) pikauwu; urgency=low
+
+  * Replace 3rd VRR session with dynamic script
+
+ -- Ward Nakchbandi <hotrod.master@hotmail.com>  Sat, 01 Oct 2022 14:50:00 +0200
+
 pika-gnome-session (1.0-99pika4.lunar) lunar; urgency=low
 
   * Fix libunity for VRR session

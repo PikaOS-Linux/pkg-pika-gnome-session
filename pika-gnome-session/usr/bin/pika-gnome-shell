@@ -8,5 +8,8 @@ else
     then
         echo "Start Gnome shell in Varible Refresh mode"
         gnome-shell-vrr "$@"
+    else
+        echo "Start Gnome shell in Dynamic Triple buffer mode"
+        gnome-shell "$@"
     fi
 fi

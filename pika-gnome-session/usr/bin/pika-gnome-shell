@@ -1,15 +1,15 @@
 #! /bin/bash
 if drm_info | grep vrr_capable | grep "= 1"
 then
-    echo "Start Gnome shell in Dynamic Triple buffer mode"
-    gnome-shell "$@"
-else
     if gsettings get org.gnome.mutter experimental-features | grep variable-refresh-rate
     then
-        echo "Start Gnome shell in Varible Refresh mode"
+        echo "Starting Gnome shell in Varible Refresh mode"
         gnome-shell-vrr "$@"
     else
-        echo "Start Gnome shell in Dynamic Triple buffer mode"
+        echo "Starting Gnome shell in Dynamic Triple buffer mode"
         gnome-shell "$@"
     fi
+else
+    echo "Starting Gnome shell in Dynamic Triple buffer mode"
+    gnome-shell "$@"
 fi

@@ -4,12 +4,12 @@ then
     if gsettings get org.gnome.mutter experimental-features | grep variable-refresh-rate
     then
         echo "Starting Gnome shell in Varible Refresh mode"
-        gnome-shell-vrr "$@"
+        /usr/bin/gnome-shell-vrr --unsafe-mode "$@"
     else
         echo "Starting Gnome shell in Dynamic Triple buffer mode"
-        gnome-shell "$@"
+        /usr/bin/gnome-shell --unsafe-mode "$@"
     fi
 else
     echo "Starting Gnome shell in Dynamic Triple buffer mode"
-    gnome-shell "$@"
+    /usr/bin/gnome-shell --unsafe-mode "$@"
 fi

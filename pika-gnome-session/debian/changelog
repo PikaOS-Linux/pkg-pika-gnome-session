@@ -1,4 +1,4 @@
-pika-gnome-session (1.3-99pika1) pikauwu; urgency=low
+pika-gnome-session (1.4-99pika1) pikauwu; urgency=low
 
   * Replace 3rd VRR session with dynamic script
 
